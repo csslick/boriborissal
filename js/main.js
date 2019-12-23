@@ -65,7 +65,7 @@ $(function () {
 /* bx_slider */
 $(document).ready(function () {
 
-  $('#container').imagesLoaded(function () {
+  $('body').imagesLoaded(function () {
     // images have loaded
     $('.slider').bxSlider({
       // 여기에 옴션설정
