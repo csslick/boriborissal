@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>농산물쇼핑몰-보리보리쌀</title>
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Yeon+Sung&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bx slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- jQuery -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- bx slider js -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- 상품데이터 -->
+    <script src="./js/data.js"></script>
+    <!-- 사용자 javaScript -->
+    <script src="./js/main.js"></script>
+    <!-- 폰트어썸(폰트아이콘) -->
+    <script src="https://kit.fontawesome.com/91cdc24606.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header id="main_header">
+        <div class="container">
+            <h1>
+                <a href="./index.html">
+                    <img src="./imgs/logo.png" alt="보리보리쌀 로고">
+                </a>
+            </h1>
+            <!-- 검색창 -->
+            <form id="search_box">
+                <input 
+                    type="text"
+                    placeholder="New! 겨울에는 따뜻한 유자차와 함께"    
+                >
+                <button type="submit">
+                    <img src="./imgs/search.png" alt="검색아이콘">
+                </button>
+            </form>
+            <!-- 유틸리티메뉴 -->
+            <nav id="util">
+                <a href="#"><img src="./imgs/login.png" alt="로그인아이콘"></a>
+                <a href="#"><img src="./imgs/beasong.png" alt="배송조회아이콘"></a>
+                <a href="#"><img src="./imgs/cart.png" alt="장바구니아이콘"></a>
+                <a href="#"><img src="./imgs/star.png" alt="즐겨찾기아이콘"></a>
+            </nav>
+        </div><!-- end container -->
+    </header>
+    
+    <!-- 메인 gnb -->
+    <nav id="main_gnb">
+        <div class="container">
+            <button id="category_btn">
+                <img src="./imgs/bar.png" alt="카테고리버튼">
+                <span>카테고리</span>
+            </button>
+            <ul>
+                <li><a href="#" class="section_title">쇼핑몰소개</a><div></div></li>
+                <li><a href="#" class="section_title">농가소개</a><div></div></li>
+                <li><a href="#" class="section_title">이벤트</a><div></div></li>
+                <li><a href="#" class="section_title">공지사항</a><div></div></li>
+                <li><a href="#" class="section_title">입점문의</a><div></div></li>
+                <li><a href="#" class="section_title">대량구매안내</a><div></div></li>
+            </ul>
+            <a href="#">우리가 몰랐던 작물의 효능</a>
+        </div><!-- end container -->
+    </nav>
+
+    <!-- 카테고리 메뉴 목록 -->
+    <nav id="category">
+        <div class="container">
+            <dl>
+                <dt><a href="#">곡류</a></dt>
+                <dd><a href="#">쌀</a></dd>
+                <dd><a href="#">보리</a></dd>
+                <dd><a href="#">밀</a></dd>
+                <dd><a href="#">깨</a></dd>
+                <dd><a href="#">콩</a></dd>
+                <dd><a href="#">옥수수</a></dd>
+                <dd><a href="#">기타</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">과일류</a></dt>
+                <dd><a href="#">사과</a></dd>
+                <dd><a href="#">포도</a></dd>
+                <dd><a href="#">배</a></dd>
+                <dd><a href="#">귤</a></dd>
+                <dd><a href="#">참외</a></dd>
+                <dd><a href="#">수박</a></dd>
+                <dd><a href="#">기타</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">채소/나물</a></dt>
+                <dd><a href="#">배추</a></dd>
+                <dd><a href="#">상추</a></dd>
+                <dd><a href="#">시금치</a></dd>
+                <dd><a href="#">파</a></dd>
+                <dd><a href="#">기타</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">근채/과채</a></dt>
+                <dd><a href="#">무</a></dd>
+                <dd><a href="#">감자</a></dd>
+                <dd><a href="#">고구마</a></dd>
+                <dd><a href="#">호박</a></dd>
+                <dd><a href="#">고추</a></dd>
+                <dd><a href="#">마늘</a></dd>
+                <dd><a href="#">기타</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">버섯류</a></dt>
+                <dd><a href="#">느타리버섯</a></dd>
+                <dd><a href="#">송이버섯</a></dd>
+                <dd><a href="#">표고버섯</a></dd>
+                <dd><a href="#">양송이</a></dd>
+                <dd><a href="#">기타</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">특농작물</a></dt>
+                <dd><a href="#">인삼</a></dd>
+                <dd><a href="#">산삼</a></dd>
+                <dd><a href="#">도라지</a></dd>
+                <dd><a href="#">구기자</a></dd>
+                <dd><a href="#">기타</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">가공류</a></dt>
+                <dd><a href="#">과일즙</a></dd>
+                <dd><a href="#">벌꿀</a></dd>
+                <dd><a href="#">기타</a></dd>
+            </dl>
+        </div><!-- end container -->
+    </nav>
+
+    <!-- 메인배너 -->
+    <section id="main_banner">
+        <div class="inner">
+            <div class="slider">
+                <img class="img_responsive" src="./imgs/main_banner01.jpg" alt="메인배너1">
+                <img class="img_responsive" src="./imgs/main_banner02.jpg" alt="메인배너2">
+                <img class="img_responsive" src="./imgs/main_banner03.jpg" alt="메인배너3">
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 콘텐츠 -->
+    <section id="now_seller">
+        <div class="container">
+            <h2 class="section_title">재철작물</h2>
+            <ul class="item_list1">
+            </ul>
+        </div>
+    </section>
+
+    <section id="top_seller">
+        <div class="container">
+            <h2 class="section_title">인기상품</h2>
+            <ul class="item_list2">
+            </ul>
+        </div>
+    </section>
+
+    <!-- 브랜드 추천메뉴 -->
+    <section id="brand">
+        <div class="container">
+            <h2 class="section_title">우리지역 대표작물</h2>
+            <ul>
+                <li>
+                    <!-- 이미지는 배경으로 처리 -->
+                    <a href="#">
+                        <img src="./imgs/star_w.png" alt="즐겨찾기 아이콘">
+                        <div>
+                            <p>한번 맛보면 중독되는</p>
+                            <h3>시흥포도</h3>
+                        </div>
+                        <ul class="text">
+                            <li class="subject">이벤트</li>
+                            <li><h4>시흥포도 구매 이벤트</h4></li>
+                            <li class="day">11.18~12.31</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <!-- 이미지는 배경으로 처리 -->
+                    <a href="#">
+                        <img src="./imgs/star_w.png" alt="즐겨찾기 아이콘">
+                        <div>
+                            <p>배 하면 바로 떠오르는</p>
+                            <h3>나주 배</h3>
+                        </div>
+                        <ul class="text">
+                            <li class="subject">이벤트</li>
+                            <li><h4>[예약]나주 배 따기 체험</h4></li>
+                            <li class="day">11.18~2020.01.31</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <!-- 이미지는 배경으로 처리 -->
+                    <a href="#">
+                        <img src="./imgs/star_w.png" alt="즐겨찾기 아이콘">
+                        <div>
+                            <p>여행 코스로도 좋은</p>
+                            <h3>보성녹차밭</h3>
+                        </div>
+                        <ul class="text">
+                            <li class="subject">이벤트</li>
+                            <li><h4>보성녹차 이벤트</h4></li>
+                            <li class="day">11.18~12.31</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- end container -->
+    </section>
+    <footer id="main_footer">
+        <div class="container">
+            <div id="footer_menu">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">맴버십 이용약관</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div id="footer_info">
+                <address>(주)보리보리쌀<span></span>부천시 오정구 고강동 111-111</address>
+                <p>boribori@bbssal.com<span>|</span>080-0000-0000(쇼핑문의)<span>|</span>080-1111-1111(제품문의)</p>
+                <p>대표이사: 고길동<span>|</span>사업자등록번호: 106-00-00000<span>|</span>통신판매업신고번호: 경기부천-0000호</p>
+                <p>건강기능식품판매업 영업신고증 제8호<span>|</span>호스팅제공공자: (주)보리보리쌀</p>
+                <p>&copy; BORIBORISSAL CORPORATION.ALL RIGHTS RESERVED.</p>
+            </div>
+            <div id="save">
+                <h4>SGI 서울보증 소비자피해보상보험</h4>
+                <p>고객님은 안전거래를 위해 현금 결제시 저희 쇼핑몰에서<br>
+                    가입한 소비자피해보상보험 서비스를 이용하실 수 있습니다.<br>
+                    (보상대상:미배송/반품, 환불거부/쇼핑몰 부도)</p>
+                <a href="#">가입 사실 확인 &gt;</a>
+            </div>
+        </div><!-- end container -->
+    </footer>
+</body>
+</html>
